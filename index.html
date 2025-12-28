@@ -164,7 +164,7 @@
 
     async function loadTest(id) {
         show('scr-quiz');
-        const res = await fetch(`https://raw.githubusercontent.com/mrsargio/test-master/main/major${id}.json`);
+        const res = await fetch(`https://raw.githubusercontent.com/kd2929/master-test/main/major${id}.json`);
         state.data = (await res.json()).slice(0, 150);
         state.cur = 0; state.answers = {};
         startTimer(); renderQ();
@@ -245,4 +245,5 @@
     show('scr-home');
 </script>
 </body>
+
 </html>
